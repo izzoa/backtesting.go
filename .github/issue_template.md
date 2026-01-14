@@ -4,8 +4,8 @@
 
 ### Actual Behavior
 
-<!-- 
-    In case of a bug, attach full exception traceback.
+<!--
+    In case of a bug, attach full error messages and stack traces.
     Please wrap verbatim code/output in Markdown fenced code blocks.
 -->
 
@@ -19,12 +19,23 @@
 2.
 3.
 
-```python
+```go
+package main
 
-python code goes here
+import (
+    "github.com/quickfixgo/backtesting"
+)
+
+// Your code here
 
 ```
 
-### Additional info
+### Environment
 
-<!-- screenshots, code snippets, versions ... -->
+- Go version: `go version`
+- OS:
+- Backtesting.go version:
+
+### Additional Info
+
+<!-- screenshots, code snippets, related issues ... -->
