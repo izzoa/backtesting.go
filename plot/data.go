@@ -3,7 +3,7 @@ package plot
 import (
 	"time"
 
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // ChartData contains all data needed for chart rendering.

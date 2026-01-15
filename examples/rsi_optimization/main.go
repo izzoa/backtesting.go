@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/quickfixgo/backtesting"
-	"github.com/quickfixgo/backtesting/data"
-	"github.com/quickfixgo/backtesting/lib"
-	"github.com/quickfixgo/backtesting/optimize"
+	"github.com/izzoa/backtesting.go"
+	"github.com/izzoa/backtesting.go/data"
+	"github.com/izzoa/backtesting.go/lib"
+	"github.com/izzoa/backtesting.go/optimize"
 )
 
 // RSIStrategy implements a mean reversion strategy using RSI.

@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // Tolerance constants for comparisons.

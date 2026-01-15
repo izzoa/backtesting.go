@@ -3,7 +3,7 @@ package lib
 import (
 	"time"
 
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // ResampleRule defines how to group time periods.

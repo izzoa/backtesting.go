@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"sync"
 
-	backtesting "github.com/quickfixgo/backtesting"
-	"github.com/quickfixgo/backtesting/data"
+	backtesting "github.com/izzoa/backtesting.go"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // GridConfig configures grid search optimization.

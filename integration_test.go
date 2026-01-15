@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/quickfixgo/backtesting"
-	"github.com/quickfixgo/backtesting/data"
-	"github.com/quickfixgo/backtesting/lib"
-	"github.com/quickfixgo/backtesting/optimize"
-	"github.com/quickfixgo/backtesting/plot"
-	"github.com/quickfixgo/backtesting/stats"
+	"github.com/izzoa/backtesting.go"
+	"github.com/izzoa/backtesting.go/data"
+	"github.com/izzoa/backtesting.go/lib"
+	"github.com/izzoa/backtesting.go/optimize"
+	"github.com/izzoa/backtesting.go/plot"
+	"github.com/izzoa/backtesting.go/stats"
 )
 
 // =============================================================================

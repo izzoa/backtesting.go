@@ -3,7 +3,7 @@ package backtesting
 import (
 	"time"
 
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // CommissionFunc calculates commission for a trade.

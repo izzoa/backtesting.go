@@ -2,7 +2,7 @@
 
 ## API Documentation
 
-Full API documentation is available at [pkg.go.dev](https://pkg.go.dev/github.com/quickfixgo/backtesting).
+Full API documentation is available at [pkg.go.dev](https://pkg.go.dev/github.com/izzoa/backtesting.go).
 
 ## Examples
 
@@ -31,7 +31,7 @@ go install golang.org/x/tools/cmd/godoc@latest
 godoc -http=:6060
 
 # Open in browser
-open http://localhost:6060/pkg/github.com/quickfixgo/backtesting/
+open http://localhost:6060/pkg/github.com/izzoa/backtesting.go/
 ```
 
 ## Package Overview

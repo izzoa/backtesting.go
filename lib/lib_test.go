@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 func almostEqual(a, b, tol float64) bool {

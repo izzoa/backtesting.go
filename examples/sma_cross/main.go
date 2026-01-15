@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/quickfixgo/backtesting"
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // SmaCross implements a simple SMA crossover strategy.

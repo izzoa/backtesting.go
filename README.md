@@ -1,7 +1,7 @@
 # Backtesting.go
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/quickfixgo/backtesting.svg)](https://pkg.go.dev/github.com/quickfixgo/backtesting)
-[![Go Report Card](https://goreportcard.com/badge/github.com/quickfixgo/backtesting)](https://goreportcard.com/report/github.com/quickfixgo/backtesting)
+[![Go Reference](https://pkg.go.dev/badge/github.com/izzoa/backtesting.go.svg)](https://pkg.go.dev/github.com/izzoa/backtesting.go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/izzoa/backtesting.go)](https://goreportcard.com/report/github.com/izzoa/backtesting.go)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 Backtesting.go is a high-performance backtesting framework for trading strategies written in Go. It provides a simple, idiomatic API for testing trading strategies on historical OHLCV (Open-High-Low-Close-Volume) data.
@@ -48,7 +48,7 @@ Backtesting.go is a high-performance backtesting framework for trading strategie
 ## Installation
 
 ```bash
-go get github.com/quickfixgo/backtesting
+go get github.com/izzoa/backtesting.go
 ```
 
 Requires Go 1.21 or later.
@@ -64,8 +64,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/quickfixgo/backtesting"
-    "github.com/quickfixgo/backtesting/data"
+    "github.com/izzoa/backtesting.go"
+    "github.com/izzoa/backtesting.go/data"
 )
 
 // SmaCross buys when fast SMA crosses above slow SMA,
@@ -420,7 +420,7 @@ for _, trade := range results.Trades {
 For comprehensive statistics, use the `stats` package:
 
 ```go
-import "github.com/quickfixgo/backtesting/stats"
+import "github.com/izzoa/backtesting.go/stats"
 
 // Convert trades to records
 var records []*stats.TradeRecord
@@ -468,7 +468,7 @@ fullStats.Expectancy       // Expected return per trade
 Find optimal strategy parameters using grid search:
 
 ```go
-import "github.com/quickfixgo/backtesting/optimize"
+import "github.com/izzoa/backtesting.go/optimize"
 
 result, err := optimize.GridSearch(
     ohlcv,
@@ -554,7 +554,7 @@ optimize.Values(10, 20, 50, 100)
 ### Basic Indicators (data package)
 
 ```go
-import "github.com/quickfixgo/backtesting/data"
+import "github.com/izzoa/backtesting.go/data"
 
 // Simple Moving Average
 sma := data.SMA(prices, period)
@@ -566,7 +566,7 @@ ema := data.EMA(prices, period)
 ### Extended Indicators (lib package)
 
 ```go
-import "github.com/quickfixgo/backtesting/lib"
+import "github.com/izzoa/backtesting.go/lib"
 
 // RSI (Relative Strength Index)
 rsi := lib.RSI(closes, 14)
@@ -596,7 +596,7 @@ willR := lib.WilliamsR(highs, lows, closes, 14)
 ### Signal Detection
 
 ```go
-import "github.com/quickfixgo/backtesting/lib"
+import "github.com/izzoa/backtesting.go/lib"
 
 // Check if series1 crossed series2 at index
 crossed := lib.Cross(series1, series2, idx)
@@ -614,7 +614,7 @@ barsSince := lib.BarsSince(conditions, idx)  // conditions is []bool
 ### Statistical Functions
 
 ```go
-import "github.com/quickfixgo/backtesting/lib"
+import "github.com/izzoa/backtesting.go/lib"
 
 // Quantile (0.0 to 1.0)
 q := lib.Quantile(data, 0.75)
@@ -634,7 +634,7 @@ iqr := lib.IQR(data)
 Generate interactive HTML charts:
 
 ```go
-import "github.com/quickfixgo/backtesting/plot"
+import "github.com/izzoa/backtesting.go/plot"
 
 // Convert trades to plot format
 var trades []plot.TradeInfo
@@ -693,7 +693,7 @@ plot.Config{
 ### From CSV
 
 ```go
-import "github.com/quickfixgo/backtesting/data"
+import "github.com/izzoa/backtesting.go/data"
 
 // Load from CSV file
 // Expected columns: Date, Open, High, Low, Close, Volume
@@ -711,7 +711,7 @@ fmt.Printf("Date range: %s to %s\n",
 ### Programmatic Creation
 
 ```go
-import "github.com/quickfixgo/backtesting/data"
+import "github.com/izzoa/backtesting.go/data"
 
 // Create empty OHLCV with capacity
 ohlcv := data.NewOHLCV(1000)
@@ -738,7 +738,7 @@ ohlcv.Volume   // []float64
 ### Generate Random Data
 
 ```go
-import "github.com/quickfixgo/backtesting/lib"
+import "github.com/izzoa/backtesting.go/lib"
 
 // Generate random OHLCV data for testing
 ohlcv := lib.RandomOHLCData(lib.RandomDataConfig{
@@ -756,7 +756,7 @@ ohlcv := lib.RandomOHLCData(lib.RandomDataConfig{
 Resample data to higher timeframes:
 
 ```go
-import "github.com/quickfixgo/backtesting/lib"
+import "github.com/izzoa/backtesting.go/lib"
 
 // Resample to daily
 daily := lib.Resample(ohlcv, lib.ResampleDaily)
@@ -808,7 +808,7 @@ go test -bench=. ./...
 
 ## API Reference
 
-Full API documentation is available at [pkg.go.dev](https://pkg.go.dev/github.com/quickfixgo/backtesting).
+Full API documentation is available at [pkg.go.dev](https://pkg.go.dev/github.com/izzoa/backtesting.go).
 
 ### Package Overview
 
@@ -844,7 +844,7 @@ Contributions are welcome! Please read the [Contributing Guidelines](./CONTRIBUT
 
 ```bash
 # Clone the repository
-git clone https://github.com/quickfixgo/backtesting.git
+git clone https://github.com/izzoa/backtesting.go.git
 cd backtesting
 
 # Run tests

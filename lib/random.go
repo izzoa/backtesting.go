@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // RandomOHLCData generates synthetic OHLCV data based on the statistical

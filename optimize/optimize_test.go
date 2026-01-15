@@ -4,8 +4,8 @@ import (
 	"math"
 	"testing"
 
-	backtesting "github.com/quickfixgo/backtesting"
-	"github.com/quickfixgo/backtesting/data"
+	backtesting "github.com/izzoa/backtesting.go"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 func TestGenerateCombinations(t *testing.T) {

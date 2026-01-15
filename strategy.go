@@ -3,7 +3,7 @@ package backtesting
 import (
 	"time"
 
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // Strategy is the interface that all trading strategies must implement.

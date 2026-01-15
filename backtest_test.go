@@ -3,7 +3,7 @@ package backtesting
 import (
 	"testing"
 
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // SmaCrossStrategy implements a simple SMA crossover strategy.

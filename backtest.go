@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/quickfixgo/backtesting/data"
+	"github.com/izzoa/backtesting.go/data"
 )
 
 // Backtest orchestrates the backtesting process.
